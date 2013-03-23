@@ -2,8 +2,9 @@
 
 ;; Time-stamp: <2013-03-08 16:03:03 Friday by djzhang>
 
-(defconst my-emacs-path "/Volumes/SHARE/MacSystem/Documents/dea-read-only-mac/" "我的emacs相关配置文件的路径")
+;;(load-file "~/Library/dea/.emacs")
 ;;(defconst my-emacs-path           "~/emacs/" "我的emacs相关配置文件的路径")
+(defconst my-emacs-path           "/Volumes/SHARE/MacSystem/Documents/dea/" "我的emacs相关配置文件的路径")
 (defconst my-emacs-my-lisps-path  (concat my-emacs-path "my-lisps/") "我自己写的emacs lisp包的路径")
 (defconst my-emacs-lisps-path     (concat my-emacs-path "lisps/") "我下载的emacs lisp包的路径")
 (defconst my-emacs-templates-path (concat my-emacs-path "templates/") "Path for templates")
@@ -286,6 +287,9 @@
 ;; 统计命令使用频率
 ;;(require 'command-frequence)
 
+;; Emacs中的文本浏览器w3m
+;; http://emacser.com/w3m.htm
+(require 'w3m-settings)
 
 ;; 以另一用户编辑文件, 或者编辑远程主机文件
 ;;(require 'tramp-settings)
