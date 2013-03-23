@@ -1,6 +1,6 @@
 ;; -*- Emacs-Lisp -*-
 
-;; Time-stamp: <2010-11-26 13:49:22 Friday by taoshanwen>
+;; Time-stamp: <2013-03-23 14:12:45 Saturday by djzhang>
 
 ;; This  file is free  software; you  can redistribute  it and/or
 ;; modify it under the terms of the GNU General Public License as
@@ -98,7 +98,7 @@
 ;;(require 'ecb-settings)
 
 ;; doxygen
-(require 'doxymacs-settings)
+;;(require 'doxymacs-settings)
 
 (require 'autoconf-mode-settings)
 
@@ -109,10 +109,10 @@
 (require 'gud-settings)
 
 ;; subversion
-(require 'svn-settings)
+;;(require 'svn-settings)
 
 ;; 版本控制
-(require 'vc-settings)
+;;(require 'vc-settings)
 
 ;; 所有的自动补全的配置
 (require 'all-auto-complete-settings)
@@ -129,10 +129,10 @@
 (require 'html-mode-settings)
 
 ;; ruby
-(require 'ruby-settings)
+;;(require 'ruby-settings)
 
 ;; rails
-(require 'rails-settings)
+;;(require 'rails-settings)
 
 (require 'php-mode)
 
@@ -183,7 +183,7 @@
 (require 'eclim-settings)
 
 ;; 方便开发c/c++的配置
-(require 'c-settings)
+;;(require 'c-settings)
 
 ;; 放在kde-emacs后面
 (require 'compile-settings)
