@@ -1,0 +1,79 @@
+* Tasks
+- get cmd-T working (for project)
+- master grep
+  - grep in project files
+  - grep in folders in dir (include/exclude endings)
+- test org-mode html export and write blogs about all this
+- master search and search/replace regex
+- indent and comment region
+- fill-column on paragraph (and don't break in links)
+- switch project
+- signal things outside fill column
+- master navigation
+  - jump to function
+  - jump back and forth between indents etc
+  - logical jumping on python lines etc
+- org mode
+  - ido-mode working on all org-files
+  - master time tracking
+- php/html/javascript modes working
+- rails/html modes working
+- master ecb speedbar for project
+- master git and svn tools
+- regorganize todo list below
+
+* Python development environment
+- project files
+  - fix ido-mode in find file in project
+  - IDO: http://www.emacswiki.org/emacs/InteractivelyDoThings
+  - [article describing configuration](http://www.masteringemacs.org/articles/2010/10/10/introduction-to-ido-mode/)
+- term window (multi-term for >1)
+  - possibly user `term` or
+    [`multiterm`](http://www.emacswiki.org/emacs/MultiTerm)
+  - in term need to set `TERM=xterm-color` it seems
+  - read
+    [this guide](http://www.masteringemacs.org/articles/2010/11/01/running-shells-in-emacs-overview/)
+  - [ansi-term hints](http://www.emacswiki.org/emacs/AnsiTermHints)
+  -
+    http://emacs-fu.blogspot.com/2010/06/console-apps-in-emacs-with-multi-term.html
+    
+  -
+    [proper color escape seq](http://www.eterm.org/docs/view.php?doc=ref#escape)
+- dump region into buffer (e.g. ipython)
+- switch current projects
+- hideable right-hand speedbar with project info
+  - directory structure
+  - variables/functions
+  - bookmarks etc
+- configure anything more
+ - [meta sandwich blot](http://metasandwich.com/2010/07/30/what-can-i-get-for-10-dolla-anything-el/) guides on defining sources, and has an awesome theme. try to replicate
+- nicer window setup
+  - see [eproject authors setup](https://github.com/jrockway/elisp/blob/8de738e7c37c4b57aee0e777883a2aaf58c4035e/_local/windowing-extras.el)
+- themeing
+  - possibly try the tango theme
+  - check out this guy's
+    [nice setup](http://pythonic.pocoo.org/2008/2/17/there-are-many-things-you-can-say-about-emacs)
+    and his `.emacs` (saved under
+    `others-dotemacs/pythonic-dotemacs`). Also read his comments. He
+    also recommends `show-wspace.el`.
+  - make quotes non-italic
+  - make comments either non-italic or italic, but not a mix
+- later:
+  - grep in project (use ACK)
+  - tiny tools
+- https://github.com/gabrielelanaro/emacs-for-python
+- http://stackoverflow.com/questions/3821639/key-bindings-or-workflow-suggestions-for-managing-breakpoints-with-pydbgr-in-emac
+* editing
+- [[http://ignaciopp.wordpress.com/2009/06/17/emacs-indentunindent-region-as-a-block-using-the-tab-key/][fix indention]] blog entry
+
+* org-mode *
+- maps :http://julien.danjou.info/software.html
+
+# Navigation and Project Management #
+- Bind some key as a navigation key, e.g. `C-N {nav}` so that we can
+  have quick ways of reaching partiuclar projects or functions.
+- For example, `nav=P` could give a list of all projects (active and
+  inactive)
+- `nav=V` could give options for version control, such as status
+- access window configuration etc
+- the navigation could be in a popup frame, or as an anything menu
