@@ -24,7 +24,6 @@
   ))
 
 (load-config-files '(
-  "djzhang"
   "custom"
   "keybindings"
   "yasnippet"
@@ -37,6 +36,9 @@
   "org-mode-env" ; after projects.el (needs anything.el)
   ;;"python-env"
   "appearance" ; appearance least important, so load last
+  "djzhang"
+  "latex-emacs"
+  "jdee-configure"
 ))
 
 ;; since ropemacs etc is slow, wait with this until we load a python file

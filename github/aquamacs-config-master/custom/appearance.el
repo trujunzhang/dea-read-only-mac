@@ -19,7 +19,7 @@
 (setq frame-title-format '(buffer-file-name "%f" ("%b")))
  
 ;; line numbers
-(global-linum-mode -1) ; use "C-x l" keybinding instead
+(global-linum-mode 1) ; use "C-x l" keybinding instead
 (setq column-number-mode  t)
 
 ;; make side by side buffers function the same as the main window
@@ -27,12 +27,15 @@
 
 ;; theme
 (add-to-list 'load-path (concat config-root-dir "/themes"))
-(require 'color-theme-wombat)
-(color-theme-wombat) ; select the theme
+;;(require 'color-theme-wombat)
+;;(color-theme-wombat) ; select the theme
+
+;;(require 'color-theme-tango)
+;;(color-theme-tango) ; select the theme
 
 ;; highlight current line
 (global-hl-line-mode 1)
-; (set-face-background 'hl-line "#330")
+(set-face-background 'hl-line "#330")
 
 ;; darkroom-mode
 (add-to-list 'load-path (concat config-root-dir "/plugins/darkroom-mode"))

@@ -81,7 +81,8 @@
 
 ;; custom bindings
 (global-set-key (kbd "C-x l") 'linum-mode)
-(global-set-key (kbd "C-/") 'comment-region)
+;;(global-set-key (kbd "C-/") 'comment-region)
+(global-set-key (kbd "C-/") 'undo)
 (global-set-key (kbd "C-?") 'uncomment-region) ; C-S-/
 (global-set-key (kbd "C-/") 'comment-region)
 
