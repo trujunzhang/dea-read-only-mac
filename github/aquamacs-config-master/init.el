@@ -37,24 +37,24 @@
   "custom"
   "keybindings"
   "yasnippet"
-  "ecb"
+  ;"ecb"
   "multi-term"
   "version-control"
   ;;"projects"
   "markdown-env"
-  "lisp-env"
+  ;;"lisp-env"
   "org-mode-env" ; after projects.el (needs anything.el)
-  ;;"python-env"
   "appearance" ; appearance least important, so load last
   "djzhang"
   "latex-emacs"
-  "jdee-configure"
+  ;;"jdee-configure"
   "w3m-settings"
+  "wcy-desktop-settings";; 王纯业的desktop, 比desktop快多了
+  ;;"python-env"
 ))
 
 ;; since ropemacs etc is slow, wait with this until we load a python file
 ;(add-to-list 'load-path custom-config-dir)
 ;(autoload 'python-mode "python-env" "Python Environment" t)
-
 
 (provide 'init)

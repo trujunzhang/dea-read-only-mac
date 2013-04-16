@@ -26,7 +26,12 @@
 (setq truncate-partial-width-windows nil)
 
 ;; theme
-(add-to-list 'load-path (concat config-root-dir "/themes"))
+(add-to-list 'load-path (concat config-root-dir "/plugins/color-theme-6.6.0"))
+(require 'color-theme) 
+(color-theme-initialize) 
+;;(require 'color-theme-blue-sea)
+(color-theme-blue-sea)
+
 ;;(require 'color-theme-wombat)
 ;;(color-theme-wombat) ; select the theme
 

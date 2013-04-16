@@ -24,6 +24,35 @@
 
 ;; 启动窗口大小
 (setq default-frame-alist
-'((height . 24) (width . 400) (menu-bar-lines . 20) (tool-bar-lines . 0)))
+'((height . 24) (width . 200) (menu-bar-lines . 20) (tool-bar-lines . 0)))
 
 
+;; bury *scratch* buffer instead of kill it
+(defun kill-scratch-buffer ()
+  ;; The next line is just in case someone calls this manually
+  (set-buffer (get-buffer-create "*scratch*"))
+
+  ;; Kill the current (*scratch*) buffer
+  (remove-hook 'kill-buffer-query-functions 'kill-scratch-buffer)
+  (kill-buffer (current-buffer))
+
+  ;; Make a brand new *scratch* buffer
+  (set-buffer (get-buffer-create "*scratch*"))
+  (lisp-interaction-mode)
+  (make-local-variable 'kill-buffer-query-functions)
+  (add-hook 'kill-buffer-query-functions 'kill-scratch-buffer)
+
+  ;; Since we killed it, don't let caller do that.
+  nil)
+
+(defadvice kill-buffer (around kill-buffer-around-advice activate)
+  (let ((buffer-to-kill (ad-get-arg 0)))
+    (if (equal buffer-to-kill "*scratch*")
+        (bury-buffer)
+      ad-do-it)))
+
+;;(kill-scratch-buffer)
+
+
+;;(switch-to-buffer "*scratch*") 
+;;(delete-other-windows) 
