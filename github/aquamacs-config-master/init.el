@@ -13,6 +13,16 @@
 ;; Add plugins
 (add-to-list 'load-path (concat config-root-dir "/plugins"))
 
+;;(require 'util)
+
+;; 一些基本的小函数
+(require 'ahei-misc)
+
+;; 利用`eval-after-load'加快启动速度的库
+;; 用eval-after-load避免不必要的elisp包的加载
+;; http://emacser.com/eval-after-load.htm
+(require 'eval-after-load)
+
 ;; Add custom configurations
 (defconst custom-config-dir (concat config-root-dir "/custom/")
   "Path to directory containing user customized configurations.")
@@ -39,6 +49,7 @@
   "djzhang"
   "latex-emacs"
   "jdee-configure"
+  "w3m-settings"
 ))
 
 ;; since ropemacs etc is slow, wait with this until we load a python file
