@@ -46,12 +46,14 @@
   "org-mode-env" ; after projects.el (needs anything.el)
   "appearance" ; appearance least important, so load last
   "djzhang"
+  "sr-speedbar-settings"
   "latex-emacs"
   ;;"jdee-configure"
   ;;"w3m-settings"
   "wcy-desktop-settings";; 王纯业的desktop, 比desktop快多了
   ;;"python-env"
 ))
+
 
 ;; since ropemacs etc is slow, wait with this until we load a python file
 ;(add-to-list 'load-path custom-config-dir)

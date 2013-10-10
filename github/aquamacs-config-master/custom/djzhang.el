@@ -22,9 +22,11 @@
 (global-set-key [(f9)] 'list-bookmarks)
 (global-set-key [(f10)] 'bookmark-set)
 
+
 ;; 启动窗口大小
-(setq default-frame-alist
-'((height . 24) (width . 200) (menu-bar-lines . 20) (tool-bar-lines . 0)))
+;;(setq default-frame-alist
+;;'((height . 35) (width . 125) (menu-bar-lines . 20) (tool-bar-lines . 0)))
+
 
 
 ;; bury *scratch* buffer instead of kill it
