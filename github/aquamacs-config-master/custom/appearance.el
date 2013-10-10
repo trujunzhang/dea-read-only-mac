@@ -30,7 +30,8 @@
 (require 'color-theme) 
 (color-theme-initialize) 
 ;;(require 'color-theme-blue-sea)
-(color-theme-blue-sea)
+;;(color-theme-blue-sea)
+(color-theme-robin-hood)
 
 ;;(require 'color-theme-wombat)
 ;;(color-theme-wombat) ; select the theme

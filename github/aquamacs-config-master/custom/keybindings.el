@@ -1,3 +1,4 @@
+
 ;;; Custom Key Bindings
 
 ;; BUFFERS
@@ -84,7 +85,7 @@
 ;;(global-set-key (kbd "C-/") 'comment-region)
 (global-set-key (kbd "C-/") 'undo)
 (global-set-key (kbd "C-?") 'uncomment-region) ; C-S-/
-(global-set-key (kbd "C-/") 'comment-region)
+;;(global-set-key (kbd "C-/") 'comment-region)
 
 (global-set-key (kbd "<M-down>") 'forward-paragraph)
 (global-set-key (kbd "<M-up>") 'backward-paragraph)
