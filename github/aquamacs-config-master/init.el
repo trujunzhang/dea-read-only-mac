@@ -37,8 +37,8 @@
   "custom"
   "keybindings"
   "yasnippet"
-  ;"ecb"
-  "multi-term"
+  ;;"ecb"
+  ;;"multi-term"
   "version-control"
   ;;"projects"
   "markdown-env"
@@ -47,7 +47,7 @@
   "appearance" ; appearance least important, so load last
   "djzhang"
   "sr-speedbar-settings"
-  "latex-emacs"
+  ;;"latex-emacs"
   ;;"jdee-configure"
   ;;"w3m-settings"
   "wcy-desktop-settings";; 王纯业的desktop, 比desktop快多了
