@@ -2,7 +2,7 @@
 ;;; (some basic settings in init.el for speedy evaluation)
 
 ;; fonts
-(set-default-font "Inconsolata-12")
+(set-frame-font "Inconsolata-12")
 
 ;; cursor line
 ;(global-hl-line-mode 1)
@@ -31,7 +31,8 @@
 (color-theme-initialize) 
 ;;(require 'color-theme-blue-sea)
 ;;(color-theme-blue-sea)
-(color-theme-robin-hood)
+;;(color-theme-robin-hood)
+(color-theme-calm-forest)
 
 ;;(require 'color-theme-wombat)
 ;;(color-theme-wombat) ; select the theme
