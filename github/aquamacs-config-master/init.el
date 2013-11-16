@@ -39,7 +39,7 @@
   "yasnippet"
   ;;"ecb"
   ;;"multi-term"
-  "version-control"
+  ;;"version-control"
   ;;"projects"
   "markdown-env"
   ;;"lisp-env"
@@ -52,6 +52,7 @@
   ;;"w3m-settings"
   "wcy-desktop-settings";; 王纯业的desktop, 比desktop快多了
   ;;"python-env"
+  "groovy-settings"
 ))
 
 
