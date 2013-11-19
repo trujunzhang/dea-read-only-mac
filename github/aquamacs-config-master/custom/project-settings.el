@@ -60,11 +60,29 @@
 
 (setq plugins-root-dir (concat config-root-dir "/plugins"))
 (setq project-mode-dir (concat plugins-root-dir "/emacs-project-mode"))
-
+(setq gradle-project-dir (concat project-mode-dir "/emacs-gradle-project-mode"))
 
 (add-to-list 'load-path plugins-root-dir)
 (add-to-list 'load-path (expand-file-name project-mode-dir))
-
+(add-to-list 'load-path (expand-file-name gradle-project-dir))
 
 (require 'project-mode)
 (project-load-all) ; Loads all saved projects. Not required.
+
+
+
+
+;;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+;; url: https://github.com/rimerosolutions/emacs-gradle-project-mode
+;;   gradle-project-mode
+;;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+;;  Configuration
+;; Put the emacs-gradle-project-mode.el file in the folder of your choice and add it to the load-path.
+
+;; Assuming that emacs-gradle-project-mode.el is in ~/.emacs.d/vendor
+(require 'emacs-gradle-project-mode)
+;; You can load automatically both project-mode and emacs-gradle-project-mode with the following lines:
+
+(emacs-gradle-minor-mode t)
+;; You can toggle emacs-gradle-minor-mode using M-x emacs-gradle-minor-mode.

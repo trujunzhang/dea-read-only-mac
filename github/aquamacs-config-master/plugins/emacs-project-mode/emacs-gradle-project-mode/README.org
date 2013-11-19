@@ -1,0 +1,32 @@
+#+TITLE: Emacs Gradle Project Mode
+
+This package provides [[http://www.gradle.org/][Gradle]] command line support in [[http://www.gnu.org/software/emacs/][Emacs]] for use with [[https://code.google.com/p/emacs-project-mode/][project-mode]].
+
+* Features
+
+- You can run pre-defined or arbitrary Gradle commands for a project with easy shortcuts.
+- You can browse documentation (main documentation page, guide, apidocs).
+- Custom JVM options to pass to the Gradle command are supported at a global level.
+- Custom command line options to pass to Gradle by default
+- You can use the Gradle wrapper by default whenever available for a project.
+- Customization group called *gradle* that is accessible via =M-x customize-group=.
+- Menubar contributions, if you use the menubar.
+
+* Dependencies and installation
+The only dependency is [[https://code.google.com/p/emacs-project-mode/][project-mode]].
+
+If you're using the package system, install *project-mode* from the list of packages with =M-x list-packages=.
+
+* Configuration
+
+Put the =emacs-gradle-project-mode.el= file in the folder of your choice and add it to the *load-path*.
+
+: ;; Assuming that emacs-gradle-project-mode.el is in ~/.emacs.d/vendor
+: (setq load-path (cons (expand-file-name "~/.emacs.d/vendor") load-path))
+: (require 'emacs-gradle-project-mode)
+
+You can load automatically both project-mode and emacs-gradle-project-mode with the following lines:
+
+: (emacs-gradle-minor-mode t)
+
+You can toggle =emacs-gradle-minor-mode= using =M-x emacs-gradle-minor-mode=.
