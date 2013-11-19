@@ -1,4 +1,7 @@
 
+;;; turn on syntax highlighting
+(global-font-lock-mode 1)
+
 (setq plugins-root-dir (concat config-root-dir "/plugins"))
 (setq groovy-dir (concat plugins-root-dir "/emacs-groovy-mode"))
 (setq gradle-dir (concat groovy-dir "/emacs-gradle-mode"))
