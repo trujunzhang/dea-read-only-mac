@@ -53,6 +53,7 @@
   "wcy-desktop-settings";; 王纯业的desktop, 比desktop快多了
   ;;"python-env"
   "groovy-settings"
+  "project-settings"
 ))
 
 
